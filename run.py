@@ -9,31 +9,27 @@ from endpoint.update_level import api as update_api
 from endpoint.get_level import api as get_api
 from endpoint.get_all_levels import api as get_all_api
 
-def create_app():
-    app = Flask(__name__)
 
-    CORS(app)
+app = Flask(__name__)
 
-    # Initialize database
-    db = init_db(app)
+CORS(app)
 
-    # Create API
-    api = Api(app)
+# Initialize database
+db = init_db(app)
 
-    # Add namespaces
-    api.add_namespace(create_api)
-    api.add_namespace(delete_api)
-    api.add_namespace(update_api)
-    api.add_namespace(get_api)
-    api.add_namespace(get_all_api)
+# Create API
+api = Api(app)
 
-    return app, db
+# Add namespaces
+api.add_namespace(create_api)
+api.add_namespace(delete_api)
+api.add_namespace(update_api)
+api.add_namespace(get_api)
+api.add_namespace(get_all_api)
+
+# Create database tables
+with app.app_context():
+    db.create_all()
 
 if __name__ == '__main__':
-    app, db = create_app()
-
-    # Create database tables
-    with app.app_context():
-        db.create_all()
-
     app.run()
