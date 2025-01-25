@@ -1,0 +1,182 @@
+/* Reset and Base Styles */
+:root {
+    --primary-color: rgba(0, 188, 180, 1);
+    --secondary-color: rgba(196, 232, 107, 1);
+    --text-color: #333;
+    --background-gradient: linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: var(--background-gradient);
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Typography */
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Window/Card Styles */
+.window {
+    background-color: white;
+    border: 2px solid #264f0c;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-add {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+}
+
+/* Card Styles */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Cube Creation Styles */
+.cube-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 5px;
+}
+
+.cube-face {
+    display: grid;
+    gap: 2px; /* Espace entre les cellules */
+    width: 100%; /* S'adapte à la taille du conteneur */
+    aspect-ratio: 1; /* Garder un ratio carré pour le conteneur de la face */
+}
+
+.cube-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color: #000;
+    background-color: #ccc; /* Couleur par défaut */
+    border: 1px solid #000;
+    position: relative;
+}
+
+.cube-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Garder les proportions sans déformer l'image */
+}
+
+
+
+.cube-cell:hover {
+    opacity: 0.7;
+}
+
+/* Form Controls */
+.create-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.form-input, .form-select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+.card .icon {
+    width: 16px;   /* Smaller icon size */
+    height: 16px;  /* Consistent square aspect */
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.card .buttons {
+    display: flex;
+    gap: 8px;  /* Tighter gap between buttons */
+}
+
+.card button {
+    width: 32px;   /* Smaller button size */
+    height: 32px;  /* Consistent button size */
+    padding: 4px;  /* Minimal padding */
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubik'scape - Update Cube</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation-buttons">
+            <a href="index.html" class="btn btn-secondary">← Back to Dashboard</a>
+        </div>
+
+        <div class="cube-design">
+            <div id="cube-patron" class="cube-wrapper">
+                <div id="top" class="cube-face"></div>
+                <div id="front" class="cube-face"></div>
+                <div id="right" class="cube-face"></div>
+                <div id="back" class="cube-face"></div>
+                <div id="left" class="cube-face"></div>
+                <div id="bottom" class="cube-face"></div>
+            </div>
+        </div>
+
+        <div class="create-controls">
+            <input
+                type="text"
+                id="cube-name"
+                placeholder="Cube Name"
+                class="form-input"
+            >
+            <select id="taille-select" class="form-select">
+                <option value="2">2x2</option>
+                <option value="3" selected>3x3</option>
+                <option value="4">4x4</option>
+                <option value="5">5x5</option>
+                <option value="6">6x6</option>
+                <option value="7">7x7</option>
+                <option value="8">8x8</option>
+            </select>
+            <button id="update-button" class="btn btn-primary">Update</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/page-loaders.js"></script>
+</body>
+</html>

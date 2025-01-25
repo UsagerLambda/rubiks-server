@@ -1,0 +1,6 @@
+Flask
+Flask-RESTX
+Flask-CORS
+Flask-SQLAlchemy
+SQLAlchemy
+gunicorn
