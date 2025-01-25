@@ -1,10 +1,10 @@
 // api-config.js
 export const API_ENDPOINTS = {
-    GET_ALL_LEVELS: "http://192.168.1.31:5123/get_all_levels/",
-    GET_LEVEL: "http://192.168.1.31:5123/get_level/",
-    CREATE_LEVEL: "http://192.168.1.31:5123/create_level/",
-    DELETE_LEVEL: "http://192.168.1.31:5123/delete_level/",
-    UPDATE_LEVEL: "http://192.168.1.31:5123/update_level/"
+    GET_ALL_LEVELS: "https://rubiks-server.onrender.com//get_all_levels/",
+    GET_LEVEL: "https://rubiks-server.onrender.com//get_level/",
+    CREATE_LEVEL: "https://rubiks-server.onrender.com//create_level/",
+    DELETE_LEVEL: "https://rubiks-server.onrender.com//delete_level/",
+    UPDATE_LEVEL: "https://rubiks-server.onrender.com//update_level/"
 };
 
 export const PAGE_ROUTES = {
