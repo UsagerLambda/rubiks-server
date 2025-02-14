@@ -89,14 +89,14 @@ export class CubePatron {
         let valeurActuelle = this.faces[faceName][index];
 
         // Incrémente la valeur (si 12, retourne à 1)
-        valeurActuelle = valeurActuelle === 12 ? 1 : valeurActuelle + 1;
+        valeurActuelle = valeurActuelle === 14 ? 1 : valeurActuelle + 1;
 
         // Met à jour la valeur dans le tableau des faces
         this.faces[faceName][index] = valeurActuelle;
 
         // Récupère la cellule correspondante dans le DOM
         const cell = document.querySelector(`#${faceName} .cube-cell:nth-child(${index + 1}) img`);
-        
+
         // Met à jour l'image de la cellule en fonction de la nouvelle valeur
         cell.src = this.images[valeurActuelle] || 'path/to/default.png'; // Définit une image par défaut
         this.updateDebugDisplay();
@@ -114,7 +114,7 @@ export class CubePatron {
         this.debugContainer.style.zIndex = '1000';
         this.debugContainer.style.maxHeight = '300px';
         this.debugContainer.style.overflowY = 'auto';
- 
+
         document.body.appendChild(this.debugContainer);
     }
 
@@ -126,7 +126,7 @@ export class CubePatron {
             <p><strong>Taille:</strong> ${this.taille}</p>
             <h4>Faces Contents:</h4>
         `;
- 
+
         Object.entries(this.faces).forEach(([faceName, values]) => {
             debugHTML += `
                 <div>
@@ -139,7 +139,7 @@ export class CubePatron {
                 </div>
             `;
         });
- 
+
         this.debugContainer.innerHTML = debugHTML;
     }
 
