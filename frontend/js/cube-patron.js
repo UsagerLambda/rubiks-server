@@ -41,7 +41,9 @@ export class CubePatron {
             9: 'assets/segments/turn_bottom_left.png',
             10: 'assets/segments/turn_bottom_right.png',
             11: 'assets/segments/turn_top_left.png',
-            12: 'assets/segments/turn_top_right.png'
+            12: 'assets/segments/turn_top_right.png',
+            13: 'assets/segments/start.png',
+            14: 'assets/segments/end.png'
         };
     }
 
