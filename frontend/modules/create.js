@@ -11,20 +11,20 @@ window.facesValues = {
 
 // Tableau d'images
 window.images = {
-    1: 'Assets/segments/blank.png',
-    2: 'Assets/segments/crossroad_path.png',
-    3: 'Assets/segments/straight_horizontal.png',
-    4: 'Assets/segments/straight_vertical.png',
-    5: 'Assets/segments/t_bottom.png',
-    6: 'Assets/segments/t_left.png',
-    7: 'Assets/segments/t_right.png',
-    8: 'Assets/segments/t_top.png',
-    9: 'Assets/segments/turn_bottom_left.png',
-    10: 'Assets/segments/turn_bottom_right.png',
-    11: 'Assets/segments/turn_top_left.png',
-    12: 'Assets/segments/turn_top_right.png',
-    13: 'Assets/segments/start.png',
-    14: 'Assets/segments/end.png'
+    1: 'assets/segments/blank.png',
+    2: 'assets/segments/crossroad_path.png',
+    3: 'assets/segments/straight_horizontal.png',
+    4: 'assets/segments/straight_vertical.png',
+    5: 'assets/segments/t_bottom.png',
+    6: 'assets/segments/t_left.png',
+    7: 'assets/segments/t_right.png',
+    8: 'assets/segments/t_top.png',
+    9: 'assets/segments/turn_bottom_left.png',
+    10: 'assets/segments/turn_bottom_right.png',
+    11: 'assets/segments/turn_top_left.png',
+    12: 'assets/segments/turn_top_right.png',
+    13: 'assets/segments/start.png',
+    14: 'assets/segments/end.png'
 };
 
 function createFaces(gridSize) {
