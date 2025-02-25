@@ -25,10 +25,10 @@ function renderLevels(data) {
                 </div>
                 <div class="level-actions">
                     <button class="icon-btn edit-btn" data-id="${level.id}">
-                        <img src="Assets/editer.png" alt="Modifier">
+                        <img src="assets/editer.png" alt="Modifier">
                     </button>
                     <button class="icon-btn delete-btn" data-id="${level.id}">
-                        <img src="Assets/corbeille.png" alt="Supprimer">
+                        <img src="assets/corbeille.png" alt="Supprimer">
                     </button>
                 </div>
             `;
