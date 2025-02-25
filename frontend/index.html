@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rubik'scape - Dashboard</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Rubikscape - Tableau de bord</title>
 </head>
 <body>
+    <div class="grid-background"></div>
+    
     <div class="container">
-        <h1>DASHBOARD</h1>
-
-        <main class="window">
-            <div class="button-container">
-                <button id="reload-btn" class="btn btn-primary">Recharger</button>
-                <a href="create.html" class="btn btn-add">+</a>
-            </div>
-
-            <div id="levels-container">
-                <!-- Dynamically populated cube levels -->
-            </div>
-        </main>
+        <h1>Tableau de Bord</h1>
+        
+        <div class="actions">
+            <button id="Refresh">Actualiser</button>
+            <a href="create.html">
+                <button id="Add">Créer</button>
+            </a>
+        </div>
+        
+        <div id="level-cards" class="cards-container">
+            <!-- Les cartes de niveaux seront insérées ici -->
+        </div>
     </div>
-
-    <script type="module" src="js/page-loaders.js"></script>
+    
+    <script type="module" src="main.js"></script>
 </body>
 </html>

@@ -3,46 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rubik'scape - Update Cube</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/cube.css">
+    <title>Rubikscape - Mettre à jour</title>
 </head>
 <body>
-    <div class="container">
-        <div class="navigation-buttons">
-            <a href="index.html" class="btn btn-secondary">← Back to Dashboard</a>
-        </div>
-
-        <div class="cube-design">
-            <div id="cube-patron" class="cube-wrapper">
-                <div id="top" class="cube-face"></div>
-                <div id="front" class="cube-face"></div>
-                <div id="right" class="cube-face"></div>
-                <div id="back" class="cube-face"></div>
-                <div id="left" class="cube-face"></div>
-                <div id="bottom" class="cube-face"></div>
-            </div>
-        </div>
-
-        <div class="create-controls">
-            <input
-                type="text"
-                id="cube-name"
-                placeholder="Cube Name"
-                class="form-input"
-            >
-            <select id="taille-select" class="form-select">
-                <option value="2">2x2</option>
-                <option value="3" selected>3x3</option>
-                <option value="4">4x4</option>
-                <option value="5">5x5</option>
-                <option value="6">6x6</option>
-                <option value="7">7x7</option>
-                <option value="8">8x8</option>
-            </select>
-            <button id="update-button" class="btn btn-primary">Update</button>
-        </div>
+    <div class="grid-background"></div>
+    
+    <header>
+        <a href="index.html">
+            <button class="return-btn" id="Return">
+                <span class="return-btn-icon"></span>
+            </button>
+        </a>
+    </header>
+    
+    <div id="cubeContainer">
+        <div class="face top"></div>
+        <div class="face left"></div>
+        <div class="face front"></div>
+        <div class="face right"></div>
+        <div class="face back"></div>
+        <div class="face bottom"></div>
     </div>
-
-    <script type="module" src="js/page-loaders.js"></script>
+    
+    <footer>
+        <div class="send_formulaire">
+            <input type="text" id="textInput" placeholder="Entrez le nom du niveau">
+            <select id="dropdown">
+                <script>
+                    for (let i = 2; i <= 6; i++) {
+                        document.write(`<option value="${i}">${i}</option>`);
+                    }
+                </script>
+            </select>
+            <button id="Update">Mettre à jour</button>
+        </div>
+    </footer>
+    
+    <script type="module" src="modules/update.js"></script>
 </body>
 </html>

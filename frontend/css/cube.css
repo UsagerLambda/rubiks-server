@@ -1,0 +1,57 @@
+#cubeContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+/*=================*/
+
+/* Positionnement des faces */
+.top {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.left {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.front {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.right {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.back {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.bottom {
+  grid-column: 2;
+  grid-row: 3;
+}
+/*=================*/
+
+/* Style des faces */
+.face {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  display: grid;
+  background-color: white;
+}
+
+.cell {
+  border: 1px solid black;
+  background-color: white;
+}
+/*=================*/
