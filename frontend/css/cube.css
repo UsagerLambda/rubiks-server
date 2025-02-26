@@ -37,13 +37,13 @@
 .back {
   grid-column: 2;
   grid-row: 1;
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 .bottom {
   grid-column: 2;
   grid-row: 3;
-  transform: rotate(90deg);
+  transform: scaleX(-1) rotate(180deg);
 }
 
 /*=================*/

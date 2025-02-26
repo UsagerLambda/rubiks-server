@@ -1,3 +1,15 @@
 **/.DS_Store
 **/__pycache__
 **/.vscode
+venv/
+*.env
+config.ini
+
+*.pem
+*.key
+*.db
+logs/
+tmp/
+**/__pycache__/
+__pycache__/
+*.pyc
