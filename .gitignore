@@ -4,7 +4,6 @@
 venv/
 *.env
 config.ini
-
 *.pem
 *.key
 logs/
@@ -12,3 +11,4 @@ tmp/
 **/__pycache__/
 __pycache__/
 *.pyc
+endpoint/__pycache__

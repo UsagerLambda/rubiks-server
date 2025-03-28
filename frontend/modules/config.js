@@ -1,1 +1,1 @@
-export const apiUrl = "https://game.rubikscape.online/";
+export const apiUrl = "https://rubiks-server-43tw.onrender.com/";
